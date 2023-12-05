@@ -1,0 +1,24 @@
+.counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row; /* Updated to row */
+    margin: 20px;
+    justify-content: center; /* Add this line */
+}
+
+.counter button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.counter h1 {
+    font-size: 24px;
+    margin: 10px;
+}
