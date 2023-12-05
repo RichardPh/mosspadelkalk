@@ -73,9 +73,16 @@ function InputForm() {
     }, [ligapris, matchplayYearly, mixmatchYearly, extraYearly]);
 
     useEffect(() => {
-        setTotalprismedlemskap((totalpris*0.9)+690);
-        if(totalprismedlemskap < totalpris) setMessage('Det lønner seg i teorien å være medlem i MPK prismessig. Du får også andre fordeler som medlem.');
-    }, [totalpris, totalprismedlemskap]);
+        setTotalprismedlemskap((totalpris*0.9)+medlemskappris);
+        console.log('totalprismedlemskap: '+ totalprismedlemskap);
+        console.log('totalpris: '+ totalpris);
+        console.log(totalprismedlemskap < totalpris);
+        if(totalprismedlemskap < totalpris) {
+            setMessage('Det lønner seg i teorien å være medlem i MPK prismessig. Du får også andre fordeler som medlem.');
+        } else {
+            setMessage('');
+        }
+    }, [totalpris, totalprismedlemskap, medlemskappris]);
 
     return (
         <div>
