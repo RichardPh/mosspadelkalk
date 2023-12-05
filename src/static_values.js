@@ -19,7 +19,7 @@ function StaticValues({ timespris, setTimespris, ligakamper, setLigakamper, vari
             <div className={`transition-all duration-300 ${isAccordionOpen ? 'max-h-96' : 'max-h-0 overflow-hidden'}`}>
                 <p className="text-base">Her kan du legge inn dine egne verdier, eller bruke de forhåndsdefinerte.</p>
                 <fieldset className="mt-4">
-                <div className="form-group text-lg mb-2">
+                <div className="form-group text-base mb-2">
                         <label htmlFor="timespris">Timespris </label>
                         <input
                             type="number"
@@ -30,7 +30,7 @@ function StaticValues({ timespris, setTimespris, ligakamper, setLigakamper, vari
                             className="text-black border border-gray-300 rounded-md px-2 py-1"
                         />
                     </div>
-                    <div className="form-group text-lg mb-2">
+                    <div className="form-group text-base mb-2">
                         <label htmlFor="ligakamper">Ligakamper per sesong </label>
                         <input
                             type="number"
@@ -41,7 +41,7 @@ function StaticValues({ timespris, setTimespris, ligakamper, setLigakamper, vari
                             className="text-black border border-gray-300 rounded-md px-2 py-1"
                         />
                     </div>
-                    <div className="form-group text-lg mb-2">
+                    <div className="form-group text-base mb-2">
                         <label htmlFor="sesonger">Sesonger i året </label>
                         <input
                             type="number"
@@ -52,7 +52,7 @@ function StaticValues({ timespris, setTimespris, ligakamper, setLigakamper, vari
                             className="text-black border border-gray-300 rounded-md px-2 py-1"
                         />
                     </div>
-                    <div className="form-group text-lg mb-2">
+                    <div className="form-group text-base mb-2">
                         <label htmlFor="varighet">Varighet per kamp i timer </label>
                         <input
                             type="number"
@@ -66,7 +66,7 @@ function StaticValues({ timespris, setTimespris, ligakamper, setLigakamper, vari
                             className="text-black border border-gray-300 rounded-md px-2 py-1"
                         />
                     </div>
-                    <div className="form-group text-lg mb-2">
+                    <div className="form-group text-base mb-2">
                         <label htmlFor="matchplaypris">Matchplay pris </label>
                         <input
                             type="number"
@@ -77,7 +77,7 @@ function StaticValues({ timespris, setTimespris, ligakamper, setLigakamper, vari
                             className="text-black border border-gray-300 rounded-md px-2 py-1"
                         />
                     </div>
-                    <div className="form-group text-lg mb-2">
+                    <div className="form-group text-base mb-2">
                         <label htmlFor="mixmatchpris">Mixmatch pris </label>
                         <input
                             type="number"
@@ -88,7 +88,7 @@ function StaticValues({ timespris, setTimespris, ligakamper, setLigakamper, vari
                             className="text-black border border-gray-300 rounded-md px-2 py-1"
                         />
                     </div>
-                    <div className="form-group text-lg mb-2">
+                    <div className="form-group text-base mb-2">
                         <label htmlFor="medlemskappris">Medlemskap pris </label>
                         <input
                             type="number"
