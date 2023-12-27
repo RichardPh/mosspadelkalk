@@ -102,7 +102,7 @@ function InputForm() {
              />
 
                 <fieldset className="border p-4 rounded">
-                    <legend className="text-lg font-bold">Spillkalkulator</legend>
+                    <legend className="text-lg font-bold">Spillkalkulator v2</legend>
                     <div className="flex flex-col items-start">
                         <div className="form-group text-lg">
                             <label htmlFor="liga">Spiller du i liga? </label>
