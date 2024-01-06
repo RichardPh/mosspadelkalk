@@ -17,7 +17,6 @@ function InputForm() {
     const [matchplaypris, setMatchplaypris] = useState(200);
     const [mixmatchpris, setMixmatchpris] = useState(200);
     const [medlemskappris, setMedlemskappris] = useState(690);
-    const [spillFreepris, setSpillfreepris] = useState(24000);
 
     const [ligapris, setLigapris] = useState(0);
     const [matchplayYearly, setMatchplayYearly] = useState(0);
@@ -34,6 +33,26 @@ function InputForm() {
     const [totalprismedlemskap, setTotalprismedlemskap] = useState(0);
     const [error, setError] = useState('');
     const [message, setMessage] = useState('');
+
+    const values = {
+        timespris,
+        ligakamper,
+        varighet,
+        sesonger,
+        matchplaypris,
+        mixmatchpris,
+        medlemskappris
+    }
+
+    const setValues = {
+        setTimespris,
+        setLigakamper,
+        setVarighet,
+        setSesonger,
+        setMatchplaypris,
+        setMixmatchpris,
+        setMedlemskappris
+    }
 
     const handleMatchplayChange = (event) => {
         setShowMatchplayInput(event.target.checked);
@@ -87,19 +106,7 @@ function InputForm() {
     return (
         <div>
             <div className="text-red-500">{error}</div>
-            <StaticValues timespris={timespris}
-                setTimespris={setTimespris} 
-                ligakamper={ligakamper} 
-                setLigakamper={setLigakamper} 
-                varighet={varighet} setVarighet={setVarighet} 
-                sesonger={sesonger} setSesonger={setSesonger} 
-                matchplaypris={matchplaypris} 
-                setMatchplaypris={setMatchplaypris} 
-                mixmatchpris={mixmatchpris}
-                setMixmatchpris={setMixmatchpris}
-                medlemskappris={medlemskappris}
-                setMedlemskappris={setMedlemskappris}
-             />
+            <StaticValues values={values} setValues={setValues}/>
 
                 <fieldset className="border p-4 rounded">
                     <legend className="text-lg font-bold">Spillkalkulator</legend>

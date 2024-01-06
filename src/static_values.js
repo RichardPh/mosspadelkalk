@@ -1,7 +1,9 @@
 import { useState } from 'react';
 
-function StaticValues({ timespris, setTimespris, ligakamper, setLigakamper, varighet, setVarighet, sesonger, setSesonger, matchplaypris, setMatchplaypris, mixmatchpris, setMixmatchpris, medlemskappris, setMedlemskappris }) {
+function StaticValues({values, setValues }) {
     const [isAccordionOpen, setIsAccordionOpen] = useState(false);
+
+    console.log(values.timespris);
 
     const toggleAccordion = () => {
         setIsAccordionOpen(!isAccordionOpen);
@@ -25,8 +27,8 @@ function StaticValues({ timespris, setTimespris, ligakamper, setLigakamper, vari
                             type="number"
                             id="timespris"
                             name="timespris"
-                            value={timespris}
-                            onChange={(e) => setTimespris(e.target.value)}
+                            value={values.timespris}
+                            onChange={(e) => setValues.setTimespris(e.target.value)}
                             className="text-black border border-gray-300 rounded-md px-2 py-1"
                         />
                     </div>
@@ -36,8 +38,8 @@ function StaticValues({ timespris, setTimespris, ligakamper, setLigakamper, vari
                             type="number"
                             id="ligakamper"
                             name="ligakamper"
-                            value={ligakamper}
-                            onChange={(e) => setLigakamper(e.target.value)}
+                            value={values.ligakamper}
+                            onChange={(e) => setValues.setLigakamper(e.target.value)}
                             className="text-black border border-gray-300 rounded-md px-2 py-1"
                         />
                     </div>
@@ -47,8 +49,8 @@ function StaticValues({ timespris, setTimespris, ligakamper, setLigakamper, vari
                             type="number"
                             id="sesonger"
                             name="sesonger"
-                            value={sesonger}
-                            onChange={(e) => setSesonger(e.target.value)}
+                            value={values.sesonger}
+                            onChange={(e) => setValues.setSesonger(e.target.value)}
                             className="text-black border border-gray-300 rounded-md px-2 py-1"
                         />
                     </div>
@@ -61,8 +63,8 @@ function StaticValues({ timespris, setTimespris, ligakamper, setLigakamper, vari
                             max="10"
                             id="varighet"
                             name="varighet"
-                            value={varighet}
-                            onChange={(e) => setVarighet(e.target.value)}
+                            value={values.varighet}
+                            onChange={(e) => setValues.setVarighet(e.target.value)}
                             className="text-black border border-gray-300 rounded-md px-2 py-1"
                         />
                     </div>
@@ -72,8 +74,8 @@ function StaticValues({ timespris, setTimespris, ligakamper, setLigakamper, vari
                             type="number"
                             id="matchplaypris"
                             name="matchplaypris"
-                            value={matchplaypris}
-                            onChange={(e) => setMatchplaypris(e.target.value)}
+                            value={values.matchplaypris}
+                            onChange={(e) => setValues.setMatchplaypris(e.target.value)}
                             className="text-black border border-gray-300 rounded-md px-2 py-1"
                         />
                     </div>
@@ -83,8 +85,8 @@ function StaticValues({ timespris, setTimespris, ligakamper, setLigakamper, vari
                             type="number"
                             id="mixmatchpris"
                             name="mixmatchpris"
-                            value={mixmatchpris}
-                            onChange={(e) => setMixmatchpris(e.target.value)}
+                            value={values.mixmatchpris}
+                            onChange={(e) => setValues.setMixmatchpris(e.target.value)}
                             className="text-black border border-gray-300 rounded-md px-2 py-1"
                         />
                     </div>
@@ -94,8 +96,8 @@ function StaticValues({ timespris, setTimespris, ligakamper, setLigakamper, vari
                             type="number"
                             id="medlemskappris"
                             name="medlemskappris"
-                            value={medlemskappris}
-                            onChange={(e) => setMedlemskappris(e.target.value)}
+                            value={values.medlemskappris}
+                            onChange={(e) => setValues.setMedlemskappris(e.target.value)}
                             className="text-black border border-gray-300 rounded-md px-2 py-1"
                         />
                     </div>
